@@ -1,0 +1,43 @@
+[user]
+        name = Richard Abbenhuis
+        email = richard@abbenhuis.net
+[core]
+[push]
+        default = simple
+[pack]
+        windowMemory = 128m
+        deltaCacheSize = 128m
+        threads = 4
+[core]
+        packedgitlimit = 256m
+        fscache = true
+        packedgitwindowsize = 256m
+        bigFileThreshold = 256m
+[color]
+        diff = auto
+        status = auto
+        branch = auto
+        interactive = true
+[help]
+        format = man
+[diff "astextplain"]
+        textconv = astextplain
+[rebase]
+        autosquash = true
+[alias]
+        co = checkout
+        br = branch
+        ci = commit
+        st = status
+        unstage = reset HEAD --
+        last = log -1 HEAD
+        visual = !gitk
+        mt = mergetool
+[credential]
+        helper = cache --timeout=28800
+[merge]
+        tool = kdiff3
+[mergetool]
+        keepBackup = false
+[http]
+        sslverify = false
